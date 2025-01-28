@@ -55,10 +55,18 @@
     <div>
       <p>Masukkan pesanan anda</p>
       <form action="pesan" method="post">
+        <label for="jenis pembelian">Jenis pembelian</label><br><br>
+        <label for="">disini</label>
+        <input type="radio" id"beli" name="jenis pembelian" value="disini" required><br><br>
+        <label for="">diantar</label>
+        <input type="radio" id"beli" name="jenis pembelian" value="diantar" required><br><br>
         <label for="nama">Nama:</label>
         <input type="text" id="nama" name="nama" required><br><br>
-        <label for="Pesan">Pesanan</label>
-        <input type="text" id="pesan" name="pesan" required><br><br>
+        <label for="menu">menu</label>
+        <select name="menu" id="menu">
+          <option value="beng-beng">Beng-beng</option>
+          <option value="superstar">Superstar</option>
+          <option value="hello panda">Hello panda</option>
         <input type="submit" value="Submit">
     </div>
   </body>

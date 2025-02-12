@@ -3,101 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>HTML</title>
+    <title>TokoFathul</title>
   </head>
   <body>
-    <div>
-      <h1>Web Uji Coba</h1>
-      <hr>
-      <p>
-        Web ini adalah uji coba pertamaku <span class="p-1">ke sekian kalinya</span> di
-        program membuat HTML.
-      </p>
-      <p>Ini adalah urutan pembuatan web ini beserta tanggal pembuatan nya:</p>
-      <ol>
-        <li>
-          Pembuatan pertama tahun 2025 jam 7.28 AM WIB, Pagerwojo Buduran
-          Sidoarjo 1/20/2025. Berisi pembuatan struktur HTML
-        </li>
-        <li>
-          Pembuatan kedua tahun 2025 jam 7:14 PM WIB, Pagerwojo Buduran
-          Sidoarjo 1/28/2025. Berisi penyelesaian dari form pembelian
-        </li>
-      </ol>
-    </div>
-    <div>
-      <h3>TOKO FATHUL CHOIR</h3>
-      <img
-        src="toko.jpeg"
-        alt="Ini adalah gambar toko Fathul Choir"
-      />
-    </div>
-    <div>
-      <p>Ini adalah barang-barang yang dijual:</p>
-    </div>
-    <table border="1">
-      <thead>
-        <tr>
-          <th colspan="2">MENU</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>SNACK</td>
-          <td>HARGA</td>
-        </tr>
-        <tr>
-          <td>Beng-beng</td>
-          <td>Rp 2.500,00</td>
-        </tr>
-        <tr>
-          <td>Superstar</td>
-          <td>Rp 1.000,00</td>
-        </tr>
-        <tr>
-          <td>Hello Panda</td>
-          <td>Rp 2.500,00</td>
-        </tr>
-      </tbody>
-    </table>
-    <div>
-      <p>Masukkan pesanan Anda:</p>
-      <form action="pesan" method="post">
-        <fieldset>
-          <legend>Jenis Pembelian</legend>
-          <label for="beli-disini">Disini</label>
-          <input type="radio" id="beli-disini" name="jenis_pembelian" value="disini" required><br>
-          <label for="beli-diantar">Diantar</label>
-          <input type="radio" id="beli-diantar" name="jenis_pembelian" value="diantar" required><br>
-        </fieldset>
-        <br>
-        <div>
-          <label for="nama">Nama:</label>
-          <input type="text" id="nama" name="nama" required><br><br>
-        </div>
-        <div>
-          <label for="menu">Menu:</label>
-          <select name="menu" id="menu">
-            <option value="beng-beng">Beng-beng</option>
-            <option value="superstar">Superstar</option>
-            <option value="hello-panda">Hello Panda</option>
-          </select>
-        </div>
-        <br>
-        <div>
-          <label for="term">
-            <input type="checkbox" id="term" name="term" value="benar" required>Apakah sudah sesuai pesanan?
-          </label>
-        </div>
-        <br>
-        <div>
-          <label for="alamat">Alamat:</label><br>
-          <textarea name="alamat" id="alamat" cols="30" rows="5" required></textarea><br>
-          <label for="kritik & saran">Apakah ada suatu hal yang ingin anda tambahkan?</label><br>
-          <textarea name="kritik & saran" id="kritik & saran" cols="30" rows="10"></textarea><br>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
+    <nav class="container_nav">
+      <div class="nav-name">
+        <div class="firstname-nav">Toko</div>
+        <div class="lastname-nav">Fathul</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <header class="container_header">
+      </div>
+      <div class="header-text">
+        <h1>Welcome to TokoFathul</h1>
+        <p>Find your favorite products here</p>
+      </div>
+      
   </body>
 </html>

@@ -1,3 +1,51 @@
-.p-1{
-  text-decoration: underline;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color:rgb(255, 255, 255);
+}
+
+.container_nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  height: 100px;
+  background-color: #5e4418;
+}
+
+.nav-name{
+  display: flex;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav-links{
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.container_header{
+  background-image: url('market.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }

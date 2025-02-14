@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -6,47 +6,198 @@
 }
 
 body {
-  background-color:rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  margin: 0; /* Remove default body margin */
 }
 
-.container_nav{
+.container_nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  height: 100px;
-  background-color: #5e4129;
+  height: 80px;
+  background-color: #473120;
+  position: sticky; /* Sticky navbar */
+  top: 0;
+  z-index: 100; /* Ensure it's above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-.nav-name{
+.logo {
+  display: flex;
+  align-items: center; /* Vertically center logo text */
+  text-decoration: none; /* Remove underline from link */
+  color: white; /* Logo text color */
+}
+
+.nav-name {
   display: flex;
   font-size: 2rem;
   font-weight: 600;
   color: white;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   gap: 20px;
   list-style-type: none;
 }
 
-.nav-links a{
+.nav-links a {
   text-decoration: none;
   color: white;
   font-size: 1rem;
   font-weight: 500;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
-.container_header{
+.nav-links a:hover {
+  color: #f0c808; /* Highlight color on hover */
+}
+
+.search-container {
+  display: flex;
+}
+
+#search-form {
+  display: flex;
+}
+
+#search-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px; /* Rounded left corner */
+  flex-grow: 1; /* Make search box take up available space */
+}
+
+#search-form button {
+  background-color: #f0c808; /* Example color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 5px 5px 0; /* Rounded right corner */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-form button:hover {
+  background-color: #e6b400; /* Darker color on hover */
+}
+
+.container_header {
   background-image: url('market.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 70vh; /* Adjusted height */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
+  padding: 20px; /* Add some padding */
+  position: relative; /* For pseudo-element positioning */
+}
+
+.container_header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+  z-index: 1; /* Place behind text */
+}
+
+.header-text {
+  max-width: 800px; /* Limit width of header text */
+  margin: 0 auto; /* Center the text */
+  position: relative; /* For z-index */
+  z-index: 2; /* Place above overlay */
+}
+
+.header-text h1 {
+  font-size: 3rem; /* Larger heading */
+  margin-bottom: 10px;
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Products Section */
+.products-section {
+  padding: 40px;
+  background-color: #f8f8f8; /* Light background for products */
+}
+
+.products-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.products-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem; /* Larger heading for products */
+  color: #473120; /* Dark color for contrast */
+}
+
+.product-scroll-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+  padding: 10px 0; /* Add some vertical padding */
+}
+
+.product-grid {
+  display: inline-block; /* Allow horizontal layout */
+}
+
+.product-card {
+  display: inline-block; /* Allow horizontal layout */
+  width: 250px; /* Fixed width for each product card */
+  margin-right: 20px; /* Space between cards */
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth scaling and shadow on hover */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+.product-card h3 {
+  margin-bottom: 5px;
+  color: #473120; /* Dark color for product titles */
+}
+
+.product-card p {
+  color: #555; /* Slightly darker text for descriptions */
+}
+
+.product-card button {
+  background-color: #007bff; /* Example color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3; /* Darker color on hover */
 }
